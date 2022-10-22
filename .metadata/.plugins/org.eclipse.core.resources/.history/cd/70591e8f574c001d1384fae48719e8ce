@@ -1,0 +1,21 @@
+package intro;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Hello world!");
+		
+		String word = "İlginizi çekebilir";
+		System.out.println(word);
+		
+		
+		int number = 4;
+		int number2 = 7;
+		System.out.println("Birinci sayı: "+number+" ile "+"ikinci sayının: "+number2+" toplamı: "+(number+number2));
+		
+		double dolarYesterday = 18.15;
+		double dolarToday = 18.10;
+		boolean isOk = true;
+		System.out.print("Dolar dün : "+dolarYesterday);
+		System.out.print("Dolar bugün : "+dolarToday);
+	}
+}

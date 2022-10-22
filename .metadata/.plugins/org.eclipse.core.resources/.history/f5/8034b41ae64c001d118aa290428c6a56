@@ -1,0 +1,14 @@
+package variables;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int studentCount = 13;
+		
+		System.out.println("Öğrenci Sayısı : " + studentCount);
+		System.out.println("Öğrenci Sayısı : " + studentCount );
+		System.out.println("Öğrenci Sayısı : " + studentCount); 
+		System.out.println("Öğrenci Sayısı : " + studentCount);
+		System.out.println("Öğrenci Sayısı : " + studentCount);
+	}
+}

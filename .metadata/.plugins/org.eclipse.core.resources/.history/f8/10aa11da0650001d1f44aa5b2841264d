@@ -1,0 +1,27 @@
+package miniProjectFindPrimeNumbers;
+
+public class Main {
+	
+	static boolean FindPrimeNumber(int number) {
+		boolean result = false;
+		for(int i=2;i<number;i++) {
+			if(number%i==0) {
+				result=true;
+				break;
+			}
+		}
+		return result;
+	}
+	static void IsPrimeNumber(int number) {
+		if(FindPrimeNumber(number)) {
+			System.out.println("Sayı asal değil.");
+		}else {
+			System.out.println("Sayı asal bir sayıdır.");
+		}
+	}
+	public static void main(String[] args) {
+		IsPrimeNumber(18);
+	}
+}
+
+

@@ -1,0 +1,15 @@
+package miniProjectAmicableNumbers;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("ARKADAŞ SAYILAR MI?");
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen ilk sayıyı giriniz: ");
+		int number1 = scanner.nextInt();
+		System.out.println("Lütfen ikinci sayıyı giriniz: ");
+		int number2 = scanner.nextInt();
+	}
+}

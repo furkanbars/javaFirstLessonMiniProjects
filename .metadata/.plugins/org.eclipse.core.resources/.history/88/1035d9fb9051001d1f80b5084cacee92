@@ -1,0 +1,58 @@
+package miniProjectHowIsTheLetter;
+
+import java.util.Scanner;
+
+//a,ı,o,u = kalın
+//e,i,ö,ü = ince
+
+public class Main {
+	static char[] ConvertToChar(String expression) {
+		char[] characters = new char[expression.length()];
+		expression.getChars(0, expression.length(), characters, 0);
+		return characters;
+	}
+	
+	static char[] GiveBold(char[] characters) {
+		char[] boldCharacters = new char[characters.length];
+		int count = 1;
+
+		for(char character:characters) {
+			switch (character) {
+			case 'A':
+			case 'a':
+				boldCharacters[count] = character;
+				count++;
+				break;
+			case 'I':
+			case 'ı':
+				boldCharacters[count] = character;
+				count++;
+				break;
+			case 'O':
+			case 'o':
+				boldCharacters[count] = character;
+				count++;
+				break;
+			case 'U':
+			case 'u':
+				boldCharacters[count] = character;
+				count++;
+				break;
+			default:
+				break;
+			}
+		return boldCharacters;
+		}
+	}
+	
+	static boolean GiveSlim(char[] characters) {
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.print("Lütfen ifadeyi giriniz: ");
+		Scanner scanner = new Scanner(System.in);
+		String expression = scanner.nextLine();
+		ConvertToChar(expression);
+	}
+}

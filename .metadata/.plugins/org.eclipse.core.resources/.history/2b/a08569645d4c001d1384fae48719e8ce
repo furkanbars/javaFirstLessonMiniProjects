@@ -1,0 +1,10 @@
+package intro;
+
+public class Main {
+	public static void main(String[] args) {
+		String myName = "Abdullah";
+		String mySecondName = "Furkan";
+		String myLastName = "BARIŞ";
+		System.out.print(myName+" "+mySecondName);
+	}
+}

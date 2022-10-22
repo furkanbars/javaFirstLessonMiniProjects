@@ -1,0 +1,18 @@
+package intro;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		double dolarYesterday = 18.15;
+		double dolarToday = 18.65;
+		
+		if(dolarToday>dolarYesterday) {
+			
+		}
+		
+		
+		//camelCase
+		//PascalCase
+		//Upper_Case
+	}
+}

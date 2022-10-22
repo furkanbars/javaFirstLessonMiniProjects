@@ -1,0 +1,26 @@
+package miniProjectHowIsTheLetter;
+
+import java.util.Scanner;
+
+public class Main {
+	static char[] ConvertToChar(String expression) {
+		char[] characters = new char[expression.length()];
+		expression.getChars(0, expression.length(), characters, 0);
+		return characters;
+	}
+	
+	static boolean IsBold(char[] characters) {
+		
+	}
+	
+	static boolean IsSlim(char[] characters) {
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.print("Lütfen ifadeyi giriniz: ");
+		Scanner scanner = new Scanner(System.in);
+		String expression = scanner.nextLine();
+		ConvertToChar(expression);
+	}
+}

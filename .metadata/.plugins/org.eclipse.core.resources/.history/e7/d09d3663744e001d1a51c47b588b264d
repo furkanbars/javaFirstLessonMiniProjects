@@ -1,0 +1,17 @@
+package arraysDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String student1 = "Ali";
+		String student2 = "İlker";
+		String student3 = "Abdullah";
+		String student4 = "İlayda";
+		
+		System.out.println(student1);
+		System.out.println(student2);
+		System.out.println(student3);
+		System.out.println(student4);
+	}
+}

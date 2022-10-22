@@ -1,0 +1,16 @@
+package recapDemo1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int[] numbers = {152,64,89,23,84,62,48,36,1546,4861635,4898975,5454,54,1,6553,12354};
+		int biggestNumber = 0;
+		
+		for (int i = 0; i < numbers.length; i++) {
+			if(biggestNumber<numbers[i]) {
+				
+			}
+		}
+	}
+
+}

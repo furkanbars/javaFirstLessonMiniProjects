@@ -1,0 +1,26 @@
+package intro;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		double dolarYesterday = 18.65;
+		double dolarToday = 18.65;
+		String situation = "";
+		
+		if(dolarToday>dolarYesterday) {//true
+			situation = "up.svg";
+			System.out.println(situation);
+		}else if(dolarYesterday>dolarToday) {
+			situation = "down.svg";
+			System.out.println(situation);
+		}else if(dolarToday == dolarYesterday) {
+			situation = "equal.svg";
+			System.out.println(situation);
+		}
+		
+		
+		//camelCase
+		//PascalCase
+		//Upper_Case
+	}
+}

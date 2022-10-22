@@ -1,0 +1,79 @@
+package miniProjectHowIsTheLetter;
+
+import java.util.Scanner;
+
+public class Main {
+	static void HowIsTheLetter(String expression) {
+		char[] characters = new char[expression.length()];
+		expression.getChars(0, expression.length(), characters, 0);
+		
+		for(char character:characters) {
+			if (character == 'a',character == 'A') {
+				
+			}
+		}
+	}
+	
+	static boolean IsBold(char[] characters) {
+		boolean result = false;
+		for(char character:characters) {
+			switch (character) {
+				case 'A':
+				case 'a':
+					result = true;
+					return result;
+				case 'I':
+				case 'ı':
+					result = true;
+					return result;
+				case 'O':
+				case 'o':
+					result = true;
+					return result;
+				case 'U':
+				case 'u':
+					result = true;
+					return result;
+				default:
+					break;
+				
+			}	
+		}
+		return false;
+	}
+	
+	static boolean IsSlim(char[] characters) {
+		boolean result = false;
+		for(char character:characters) {
+			switch (character) {
+				case 'E':
+				case 'e':
+					result = true;
+					return result;
+				case 'İ':
+				case 'i':
+					result = true;
+					return result;
+				case 'Ö':
+				case 'ö':
+					result = true;
+					return result;
+				case 'Ü':
+				case 'ü':
+					result = true;
+					return result;
+				default:
+					break;
+				
+			}	
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		System.out.print("Lütfen ifadeyi giriniz: ");
+		Scanner scanner = new Scanner(System.in);
+		String expression = scanner.nextLine();
+		HowIsTheLetter(expression);
+	}
+}

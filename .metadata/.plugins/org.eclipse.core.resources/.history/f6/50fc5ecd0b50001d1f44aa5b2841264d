@@ -1,0 +1,33 @@
+package miniProjectHowIsTheLetter;
+
+import java.util.Scanner;
+
+public class Main {
+	static void HowIsTheLetter(String expression) {
+		char[] characters = new char[expression.length()];
+		expression.getChars(0, expression.length(), characters, 0);
+		
+		for(char character:characters) {
+			if (character == 'a',character == 'A') {
+				
+			}
+		}
+	}
+	
+	static boolean IsBold(char[] characters) {
+		boolean result = false;
+		for(char character:characters) {
+			switch (character) {
+				case 'A':
+			}		
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		System.out.print("Lütfen ifadeyi giriniz: ");
+		Scanner scanner = new Scanner(System.in);
+		String expression = scanner.nextLine();
+		HowIsTheLetter(expression);
+	}
+}

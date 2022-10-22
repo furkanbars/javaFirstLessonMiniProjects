@@ -1,0 +1,13 @@
+package arraysDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String student1 = "Ali";
+		String student2 = "İlker";
+		String student3 = "Abdullah";
+		
+		
+	}
+}

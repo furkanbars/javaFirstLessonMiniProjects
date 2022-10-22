@@ -1,0 +1,42 @@
+package miniProjectFindPrimeNumbers;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static boolean FindPrimeNumber(int number) {
+		boolean result = false;
+		
+		if(number==1) {
+			return result=true;
+		}
+		
+		for(int i=2;i<number;i++) {
+			if(number%i==0) {
+				result=true;
+				break;
+			}
+		}
+		return result;
+	}
+	
+	static void IsPrimeNumber(int number) {
+		if(number<1) {
+			System.out.println("Geçersiz sayı!");
+		}
+		else if(FindPrimeNumber(number)) {
+			System.out.println("Sayı asal değil.");
+		}else {
+			System.out.println("Sayı asal bir sayıdır.");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Lütfen sayıyı giriniz: ");
+		int number = scanner.nextInt();
+		IsPrimeNumber(number);
+	}
+}
+
+
