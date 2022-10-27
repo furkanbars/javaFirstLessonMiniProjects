@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 	
-	static boolean FindPrimeNumber(int number) {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Lütfen sayıyı giriniz: ");
+		int number = scanner.nextInt();
+		isPrimeNumber(number);
+	}
+	
+	static boolean findPrimeNumber(int number) {
 		boolean result = false;
 		
 		if(number==1) {
@@ -20,22 +27,15 @@ public class Main {
 		return result;
 	}
 	
-	static void IsPrimeNumber(int number) {
+	static void isPrimeNumber(int number) {
 		if(number<1) {
 			System.out.println("Geçersiz sayı!");
 		}
-		else if(FindPrimeNumber(number)) {
+		else if(findPrimeNumber(number)) {
 			System.out.println("Sayı asal değil.");
 		}else {
 			System.out.println("Sayı asal bir sayıdır.");
 		}
-	}
-	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("Lütfen sayıyı giriniz: ");
-		int number = scanner.nextInt();
-		IsPrimeNumber(number);
 	}
 }
 
